@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="qlkhDataSet12" targetNamespace="http://tempuri.org/qlkhDataSet12.xsd" xmlns:mstns="http://tempuri.org/qlkhDataSet12.xsd" xmlns="http://tempuri.org/qlkhDataSet12.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="qlkhConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="qlkhConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QLKhoHang.Properties.Settings.GlobalReference.Default.qlkhConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="HangHoaViewTableAdapter" GeneratorDataComponentClassName="HangHoaViewTableAdapter" Name="HangHoaView" UserDataComponentName="HangHoaViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="qlkhConnectionString (Settings)" DbObjectName="qlkh.dbo.HangHoaView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT MaHH, TenHH, Tenloai, TenNCC FROM dbo.HangHoaView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MaHH" DataSetColumn="MaHH" />
+              <Mapping SourceColumn="TenHH" DataSetColumn="TenHH" />
+              <Mapping SourceColumn="Tenloai" DataSetColumn="Tenloai" />
+              <Mapping SourceColumn="TenNCC" DataSetColumn="TenNCC" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="qlkhDataSet12" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="qlkhDataSet12" msprop:Generator_DataSetName="qlkhDataSet12">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="HangHoaView" msprop:Generator_RowEvHandlerName="HangHoaViewRowChangeEventHandler" msprop:Generator_RowDeletedName="HangHoaViewRowDeleted" msprop:Generator_RowDeletingName="HangHoaViewRowDeleting" msprop:Generator_RowEvArgName="HangHoaViewRowChangeEvent" msprop:Generator_TablePropName="HangHoaView" msprop:Generator_RowChangedName="HangHoaViewRowChanged" msprop:Generator_RowChangingName="HangHoaViewRowChanging" msprop:Generator_TableClassName="HangHoaViewDataTable" msprop:Generator_RowClassName="HangHoaViewRow" msprop:Generator_TableVarName="tableHangHoaView" msprop:Generator_UserTableName="HangHoaView">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MaHH" msprop:Generator_ColumnPropNameInRow="MaHH" msprop:Generator_ColumnPropNameInTable="MaHHColumn" msprop:Generator_ColumnVarNameInTable="columnMaHH" msprop:Generator_UserColumnName="MaHH">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="70" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TenHH" msprop:Generator_ColumnPropNameInRow="TenHH" msprop:Generator_ColumnPropNameInTable="TenHHColumn" msprop:Generator_ColumnVarNameInTable="columnTenHH" msprop:Generator_UserColumnName="TenHH">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="70" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tenloai" msprop:Generator_ColumnPropNameInRow="Tenloai" msprop:Generator_ColumnPropNameInTable="TenloaiColumn" msprop:Generator_ColumnVarNameInTable="columnTenloai" msprop:Generator_UserColumnName="Tenloai" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="70" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TenNCC" msprop:Generator_ColumnPropNameInRow="TenNCC" msprop:Generator_ColumnPropNameInTable="TenNCCColumn" msprop:Generator_ColumnVarNameInTable="columnTenNCC" msprop:Generator_UserColumnName="TenNCC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="70" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:HangHoaView" />
+      <xs:field xpath="mstns:MaHH" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
